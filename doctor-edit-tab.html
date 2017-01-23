@@ -1,0 +1,1049 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Edit Doctor</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-switch.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/datepicker.css" rel="stylesheet" type="text/css">
+<link href="css/responsive-tabs.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/color.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header> <span class="back-link"><i class="fa fa-angle-left"></i> <a href="doctor-details.html">Back</a></span>
+  <h1> Dr. Annie Lee</h1>
+  <div class="header-right-section">
+    <div class="dropdown"> <span class="dropdown-toggle header-dropdown-link" data-toggle="dropdown"><i class="fa fa-ellipsis-v"></i></span>
+      <ul class="dropdown-menu header-dropdown-menu">
+        <li><a href="#">Upload CSV</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <div class=" col-xs-12 tab-holder">
+      <div class="tab-link-box num1 active"> <span class="doctor-icon"></span> <span class="tab-link-text">Edit Doctor Data</span>
+        <div class="inner-page-link"><a><i class="fa fa-angle-right"></i></a></div>
+      </div>
+      <div class="tab-content-holder" style="display:block;">
+        <div class="col-xs-12">
+          <form class="form-inline">
+            <div class="row form-row edit-form-row">
+              <div class="col-xs-12 form-block">
+                <h5 class="bold-font">Personal Details</h5>
+              </div>
+              <div class="prfl-img-holder">
+                <input type="file" class="upload-photo">
+                <img src="images/profile-img.png" alt="#"> <span class="photo-text">Edit</span> </div>
+              <div class="col-xs-12">
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>First Name:</label>
+                      <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Middle Name:</label>
+                      <input type="text" class="form-control" >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Last Name:</label>
+                      <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Date of birth:</label>
+                      <input type="text" class="form-control date-icon" value="" id="edit-prd-dt1" placeholder="Date of birth">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Gender:</label>
+                      <select class="form-control">
+                        <option>Select your gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                          <label>Language:</label>
+                          <ul class="lng-block-holder">
+                            <li class="lng-block">English <span><i class="fa fa-times"></i></span> </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                          <label>Add Language:</label>
+                          <input type="text" class="form-control" placeholder="Type and press enter">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!--<div class="col-sm-6 col-xs-12"> 
+       <div class="d-n-holder">
+
+        <label class="md-check">
+
+        <input type="radio" name="optradio" checked>
+
+        <i class="fa fa-circle"></i>
+
+        Doctor
+
+        </label>
+
+        <label class="md-check">
+
+        <input type="radio" name="optradio">
+
+        <i class="fa fa-circle"></i>
+
+        Nurse
+
+        </label>
+
+        </div>
+</div>--> 
+                  
+                </div>
+                <!--end inner row-->
+                
+                <hr>
+              </div>
+            </div>
+            <!--end form-row-->
+            
+            <div class="row form-row edit-form-row">
+              <div class="col-xs-12 form-block">
+                <h5 class="bold-font">Address</h5>
+              </div>
+              <div class="col-xs-12">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="form-group">
+                      <label>Address Line1:</label>
+                      <input type="text" class="form-control" placeholder="Address Line1">
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form-group">
+                      <label>Address Line2:</label>
+                      <input type="text" class="form-control" placeholder="Address Line12">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Location Area:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Landmark:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Village/Town:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Taluka/Tahsil:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Dist:</label>
+                      <select class="form-control">
+                        <option>MS</option>
+                        <option>WB</option>
+                        <option>MP</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>State:</label>
+                      <select class="form-control">
+                        <option>Select your state</option>
+                        <option>abcd</option>
+                        <option>ghghg</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Zip Code:</label>
+                      <input type="text" class="form-control" placeholder="Zip Code">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Country:</label>
+                      <input type="text" class="form-control" placeholder="Country">
+                    </div>
+                  </div>
+                </div>
+                <!--end inner row-->
+                
+                <hr>
+              </div>
+            </div>
+            <!--end form-row-->
+            
+            <div class="row form-row edit-form-row">
+              <div class="col-xs-12 form-block">
+                <h5 class="bold-font">Contact Details</h5>
+              </div>
+              <div class="col-xs-12">
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Email:</label>
+                      <input type="text" class="form-control" placeholder="jhonxxx@gmail.com">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Fax No:</label>
+                      <input type="text" class="form-control" placeholder="Fax No">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Home Phone:</label>
+                      <input type="text" class="form-control" placeholder="Home Phone">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Mobile Phone:</label>
+                      <input type="text" class="form-control" placeholder="Mobile Phone">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Skype Id:</label>
+                      <input type="text" class="form-control" placeholder="jhon123">
+                    </div>
+                  </div>
+                </div>
+                <!--end inner row-->
+                
+                <hr>
+              </div>
+            </div>
+            <!--end form-row-->
+            
+            <div class="row form-row edit-form-row">
+              <div class="col-xs-12 form-block">
+                <h5 class="bold-font">Doctor Details</h5>
+              </div>
+              <div class="col-xs-12 edit-tab-col">
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Specialization:</label>
+                      <select class="form-control">
+                        <option>Orthopedics</option>
+                        <option>abcd</option>
+                        <option>tytu</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form-group cus-form-group">
+                      <label>Year of experience:</label>
+                      <input type="text" class="form-control date-icon" value="" id="edit-dd-dt1" placeholder="">
+                    </div>
+                  </div>
+                </div>
+                <!--end inner row-->
+                
+                <button type="button" class="btn btn-lg btn-add"> <i class="fa fa-plus"></i> Add Speciality</button>
+              </div>
+              <!--end col-->
+              
+              <div class="col-xs-12 edit-tab-col form-color-bg">
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Degree:</label>
+                      <input type="text" class="form-control" placeholder="MBBS">
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form-group cus-form-group">
+                      <label>Year of passing:</label>
+                      <input type="text" class="form-control date-icon" value="" id="edit-dd-dt2" placeholder="">
+                    </div>
+                  </div>
+                </div>
+                <!--end inner row-->
+                
+                <button type="button" class="btn btn-lg btn-add"> <i class="fa fa-plus"></i> Add Degree</button>
+              </div>
+              <!--end col-->
+              
+              <div class="col-xs-12 edit-tab-col">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="form-group cus-form-group">
+                      <label>Previous Experience:</label>
+                      <input type="text" class="form-control" placeholder="Previous Experience">
+                    </div>
+                  </div>
+                </div>
+                <!--end inner row-->
+                
+                <button type="button" class="btn btn-lg btn-add"> <i class="fa fa-plus"></i> Add Experience</button>
+              </div>
+              <!--end col-->
+              
+              <div class="col-xs-12 form-color-bg edit-tab-col">
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Awards and Recognitions:</label>
+                      <input type="text" class="form-control" placeholder="Dr. B. C. Roy Award">
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form-group cus-form-group">
+                      <label>Year:</label>
+                      <input type="text" class="form-control date-icon" value="" id="edit-dd-dt3" placeholder="">
+                    </div>
+                  </div>
+                </div>
+                <!--end inner row-->
+                
+                <button type="button" class="btn btn-lg btn-add"> <i class="fa fa-plus"></i> Add Awards</button>
+              </div>
+              <!--end col-->
+              
+              <div class="col-xs-12 edit-tab-col">
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Membership:</label>
+                      <input type="text" class="form-control" placeholder="MBBS">
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form-group cus-form-group">
+                      <label>Duration:</label>
+                      <input type="text" class="form-control date-icon" value="" id="edit-dd-dt4" placeholder="">
+                    </div>
+                  </div>
+                </div>
+                <!--end inner row-->
+                
+                <button type="button" class="btn btn-lg btn-add"> <i class="fa fa-plus"></i> Add Membership</button>
+              </div>
+              <!--end col--> 
+              
+            </div>
+            <!--end row-->
+            <hr>
+            <div class="row form-row edit-form-row">
+              <div class="col-xs-12 form-block">
+                <h5 class="bold-font">Private Indentity</h5>
+              </div>
+              <div class="col-xs-12">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="form-group">
+                      <label>Pan Card Copy:</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control tab-file-name-holder" readonly>
+                        <span class="input-group-btn"> <span class="btn-file"> Upload
+                        <input type="file" multiple>
+                        </span> </span> </div>
+                      <span class="view-img" data-toggle="modal" data-target="#edit-vw-img-modal">View image</span> </div>
+                  </div>
+                  <!--end col-->
+                  
+                  <div class="col-xs-12">
+                    <div class="form-group">
+                      <label>Drivers License Copy:</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control tab-file-name-holder" readonly>
+                        <span class="input-group-btn"> <span class="btn-file"> Upload
+                        <input type="file" multiple>
+                        </span> </span> </div>
+                      <span class="view-img" data-toggle="modal" data-target="#edit-vw-img-modal">View image</span> </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form-group">
+                      <label>Aadhaar Card Copy:</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control tab-file-name-holder" readonly>
+                        <span class="input-group-btn"> <span class="btn-file"> Upload
+                        <input type="file" multiple>
+                        </span> </span> </div>
+                      <span class="view-img" data-toggle="modal" data-target="#edit-vw-img-modal">View image</span> </div>
+                  </div>
+                  <!--end col--> 
+                  
+                </div>
+                <!--end inner row-->
+                
+                <hr>
+              </div>
+            </div>
+            <!--end row-->
+            
+            <div class="row form-row edit-form-row">
+              <div class="col-xs-12 form-block">
+                <h5 class="bold-font">Medical Indentity</h5>
+              </div>
+              <div class="col-xs-12">
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Registration Number:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Board of registration:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Registration Year:</label>
+                      <input type="text" class="form-control date-icon" value="" id="edit-mi-dt1" >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Verification Document:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 edit-tab-col">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="form-group cus-form-group">
+                          <label>Upload Document:</label>
+                          <div class="input-group cus-input-group">
+                            <input type="text" class="form-control tab-file-name-holder" readonly>
+                            <span class="input-group-btn"> <span class="btn-file"> Upload
+                            <input type="file" multiple>
+                            </span> </span> </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end inner row-->
+                    
+                    <button type="button" class="btn btn-lg btn-add"> <i class="fa fa-plus"></i> Add More</button>
+                  </div>
+                  <!--end col--> 
+                  
+                </div>
+                <!--end inner row-->
+                
+                <hr>
+              </div>
+            </div>
+            <!--end row-->
+            
+            <div class="row form-row edit-form-row">
+              <div class="col-xs-12 form-block">
+                <h5 class="bold-font">Bank Details</h5>
+              </div>
+              <div class="col-xs-12">
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Bank Name:</label>
+                      <select class="form-control">
+                        <option>Name1</option>
+                        <option>Name2</option>
+                        <option>Name3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Account Number:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>IFSC/NEFT Code:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Account Type:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Bank Address1:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Bank Address2:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-xs-12">
+                    <div class="form-group">
+                      <label>City:</label>
+                      <select class="form-control">
+                        <option>Name1</option>
+                        <option>Name2</option>
+                        <option>Name3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-xs-12">
+                    <div class="form-group">
+                      <label>State:</label>
+                      <select class="form-control">
+                        <option>Name1</option>
+                        <option>Name2</option>
+                        <option>Name3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Country:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-xs-12">
+                    <div class="form-group">
+                      <label>Zip Code:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <!--end inner row-->
+                
+                <hr>
+              </div>
+            </div>
+            <!--end row--> 
+            
+            <!--start dc-tab-->
+            
+            <div class="row tab-form-row edit-tab-form-row">
+              <div id="edit-dc-tab">
+                <ul>
+                  <li><a href="#tab-1">New Clinic</a></li>
+                  <li><a href="#tab-2">Responsive Tab-2</a></li>
+                  <li><a href="#tab-3">Responsive Tab-3</a></li>
+                </ul>
+                <div id="tab-1">
+                  <div class="dc-tab-inner">
+                    <div class="row dc-tab-inr-row edit-dc-tab-row">
+                      <div class="col-xs-12 dc-tab-header">
+                        <h5 class="bold-font">Clinic Details</h5>
+                      </div>
+                      <div class="col-xs-12">
+                        <div class="row">
+                          <div class="col-sm-6 col-xs-12">
+                            <div class="form-group">
+                              <label>Clinic Name:</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-xs-12">
+                            <div class="form-group">
+                              <label>Clinic Address:</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row dc-tab-inr-row edit-dc-tab-row">
+                      <div class="col-xs-12 dc-tab-header">
+                        <h5 class="bold-font">Visiting Details</h5>
+                      </div>
+                      <div class="col-xs-12">
+                        <div class="row">
+                          <div class="col-sm-6 col-xs-12">
+                            <div class="form-group">
+                              <label>Visiting Fee $:</label>
+                              <input type="text" class="form-control" placeholder="200">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end dc-tab-inr-row--->
+                    
+                    <div class="row dc-tab-inr-row edit-dc-tab-row">
+                      <div class="col-xs-12 dc-tab-header">
+                        <h5 class="bold-font">Availability</h5>
+                      </div>
+                      <div class="col-xs-12">
+                        <div class="time-block-holder">
+                          <div class="row">
+                            <div class="col-sm-4 col-xs-12">
+                              <div class="form-group">
+                                <label>Shift:</label>
+                                <input type="text" class="form-control input-gray-bg" value="Monday" disabled>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                              <div class="form-group">
+                                <label>Start Time:</label>
+                                <input type="text" class="form-control input-gray-bg" value="9:00" disabled>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                              <div class="form-group">
+                                <label>End Time:</label>
+                                <input type="text" class="form-control input-gray-bg" value="17:00" disabled>
+                              </div>
+                            </div>
+                          </div>
+                          <!--end inner row--> 
+                          
+                        </div>
+                        <button type="button" class="btn btn-lg btn-delete"><i class="fa fa-trash-o"></i> Delete</button>
+                      </div>
+                      <!--end col-->
+                      
+                      <div class="col-xs-12 edit-tab-col">
+                        <div class="time-block-holder">
+                          <div class="row">
+                            <div class="col-sm-4 col-xs-12">
+                              <div class="form-group">
+                                <label>Shift:</label>
+                                <select class="form-control">
+                                  <option></option>
+                                  <option>Sunday</option>
+                                  <option>Monday</option>
+                                  <option>Tuesday</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                              <div class="form-group">
+                                <label>Start Time:</label>
+                                <select class="form-control">
+                                  <option> elect Start Time</option>
+                                  <option>00:00</option>
+                                  <option>00:00</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                              <div class="form-group">
+                                <label>End Time:</label>
+                                <select class="form-control">
+                                  <option>select End Time</option>
+                                  <option>00:00</option>
+                                  <option>00:00</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <!--end inner row--> 
+                          
+                        </div>
+                        <button type="button" class="btn btn-lg btn-add"> <i class="fa fa-plus"></i> Add Shift</button>
+                      </div>
+                      <!--end col--> 
+                      
+                    </div>
+                    <!--end dc-tab-inr-row---> 
+                    
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 add-clinic-btn-holder">
+                      <button class="btn btn-lg btn-clinic" type="button"> <i class="fa fa-plus"></i> Add Clinic</button>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab-2">
+                  <p>tab-2Quisque sodales sodales lacus pharetra bibendum. Etiam commodo non velit ac rhoncus. Mauris euismod purus sem, ac adipiscing quam laoreet et. Praesent vulputate ornare sem vel scelerisque. Ut dictum augue non erat lacinia, sed lobortis elit gravida. Proin ante massa, ornare accumsan ultricies et, posuere sit amet magna. Praesent dignissim, enim sed malesuada luctus, arcu sapien sodales sapien, ut placerat eros nunc vel est. Donec tristique mi turpis, et sodales nibh gravida eu. Etiam odio risus, porttitor non lacus id, rhoncus tempus tortor. Curabitur tincidunt molestie turpis, ut luctus nibh sollicitudin vel. Sed vel luctus nisi, at mattis metus. Aenean ultricies dolor est, a congue ante dapibus varius. Nulla at auctor nunc. Curabitur accumsan feugiat felis ut pretium. Praesent semper semper nisi, eu cursus augue.</p>
+                </div>
+                <div id="tab-3">
+                  <p>tab-3Mauris facilisis elit ut sem eleifend accumsan molestie sit amet dolor. Pellentesque dapibus arcu eu lorem laoreet, vitae cursus metus mattis. Nullam eget porta enim, eu rutrum magna. Duis quis tincidunt sem, sit amet faucibus magna. Integer commodo, turpis consequat fermentum egestas, leo odio posuere dui, elementum placerat eros erat id augue. Nullam at eros eget urna vestibulum malesuada vitae eu mauris. Aliquam interdum rhoncus velit, quis scelerisque leo viverra non. Suspendisse id feugiat dui. Nulla in aliquet leo. Proin vel magna sed est gravida rhoncus. Mauris lobortis condimentum nibh, vitae bibendum tortor vehicula ac. Curabitur posuere arcu eros.</p>
+                </div>
+              </div>
+            </div>
+            <!--end row-->
+            
+            <div class="form-btn-holder">
+              <button class="btn btn-lg btn-green btn-block" type="button">Update</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--end id="tab1"-->
+      
+      <div class="tab-link-box num2"> <span class="profile-status-icon"></span> <span class="tab-link-text">Change Profile Status</span>
+        <div class="inner-page-link"><a><i class="fa fa-angle-right"></i></a></div>
+      </div>
+      <div class="tab-content-holder">
+        <form class="form-inline">
+          <div class="row form-row edit-form-row2">
+            <div class="col-xs-12 form-block">
+              <h5>Current Status</h5>
+            </div>
+            <div class="col-xs-12">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="pf-status-holder">
+                    <label class="md-check">
+                      <input type="radio" name="p-status" checked>
+                      <i class="fa fa-circle"></i> Active </label>
+                    <label class="md-check">
+                      <input type="radio" name="p-status">
+                      <i class="fa fa-circle"></i> Block </label>
+                  </div>
+                </div>
+                <div class="col-sm-5 col-xs-12">
+                  <div class="form-group">
+                    <label>From:</label>
+                    <input type="text" class="form-control date-icon" value="" id="edit-curnt-status-dt1" >
+                  </div>
+                </div>
+                <div class="col-sm-5 col-xs-12">
+                  <div class="form-group">
+                    <label>To:</label>
+                    <input type="text" class="form-control date-icon" value="" id="edit-curnt-status-dt2">
+                  </div>
+                </div>
+                <div class="col-sm-2 col-xs-12">
+                  <label class="or-text">OR:</label>
+                </div>
+                <div class="col-xs-12">
+                  <div class="form-group">
+                    <label></label>
+                    <label class="md-check check-label">
+                      <input type="checkbox">
+                      <i class="fa fa-circle"></i> Block permanent </label>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="form-group">
+                    <label class="textarea-label">Reason:</label>
+                    <textarea class="form-control"></textarea>
+                  </div>
+                </div>
+              </div>
+              <!--end inner row-->
+              
+              <hr>
+            </div>
+          </div>
+          <!--end form-row-->
+          
+          <div class="col-xs-12">
+            <div class="form-btn-holder">
+              <button class="btn btn-lg btn-green btn-block" type="button">Update Status</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--end tab2-->
+      
+      <div class="tab-link-box num3"> <span class="verify-doctor-icon"></span> <span class="tab-link-text">Verify Doctor Data</span>
+        <div class="inner-page-link"><a><i class="fa fa-angle-right"></i></a></div>
+      </div>
+      <!--end tablink3-->
+      
+      <div class="tab-content-holder">
+        <form class="form-inline">
+          <div class="row form-row edit-form-row3">
+            <div class="col-xs-12 form-block">
+              <h5>Data verification</h5>
+              <h5 class="light-font">Select verification Status</h5>
+            </div>
+            <div class="col-xs-12">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="vrfy-status-link">
+                    <label class="md-check">
+                      <input type="radio" name="v-status" checked value="vrfy-status1">
+                      <i class="fa fa-circle"></i> Ongoing </label>
+                    <label class="md-check">
+                      <input type="radio" name="v-status" value="vrfy-status2">
+                      <i class="fa fa-circle"></i> Verification Complete </label>
+                    <label class="md-check">
+                      <input type="radio" name="v-status" value="vrfy-status3">
+                      <i class="fa fa-circle"></i> Verification Failed </label>
+                    <label class="md-check">
+                      <input type="radio" name="v-status" value="vrfy-status4">
+                      <i class="fa fa-circle"></i> Unable to Verify </label>
+                  </div>
+                </div>
+                <!--end col-->
+                
+                <div class="col-xs-12 vrfy-status-content vrfy-status1-content">
+                  <div class="vrfy-option-holder">
+                    <label class="md-check check-label">
+                      <input type="checkbox">
+                      <i class="fa fa-circle"></i> Notify via email </label>
+                    <label class="md-check check-label">
+                      <input type="checkbox">
+                      <i class="fa fa-circle"></i> Notify via text message </label>
+                    <label class="md-check check-label">
+                      <input type="checkbox">
+                      <i class="fa fa-circle"></i> Notify via text notification </label>
+                    <div class="ntfc-setting-icon"><i class="fa fa-cog fa-2x"></i></div>
+                  </div>
+                </div>
+                <div class="col-xs-12 vrfy-status-content vrfy-status2-content">
+                  <div class="vrfy-option-holder">
+                    <label class="md-check check-label">
+                      <input type="checkbox">
+                      <i class="fa fa-circle"></i> Notify via email </label>
+                    <label class="md-check check-label">
+                      <input type="checkbox">
+                      <i class="fa fa-circle"></i> Notify via text message </label>
+                    <label class="md-check check-label">
+                      <input type="checkbox">
+                      <i class="fa fa-circle"></i> Notify via text notification </label>
+                    <div class="ntfc-setting-icon"><i class="fa fa-cog fa-2x"></i></div>
+                  </div>
+                  <div class="form-group">
+                    <label class="textarea-label">Welcome message:</label>
+                    <textarea class="form-control"> Default message goes here</textarea>
+                  </div>
+                </div>
+                <div class="col-xs-12 vrfy-status-content vrfy-status3-content">
+                  <div class="vrfy-option-holder">
+                    <label class="md-check check-label">
+                      <input type="checkbox">
+                      <i class="fa fa-circle"></i> Notify via email </label>
+                    <label class="md-check check-label">
+                      <input type="checkbox">
+                      <i class="fa fa-circle"></i> Notify via text message </label>
+                    <label class="md-check check-label">
+                      <input type="checkbox">
+                      <i class="fa fa-circle"></i> Notify via text notification </label>
+                    <div class="ntfc-setting-icon"><i class="fa fa-cog fa-2x"></i></div>
+                  </div>
+                  <div class="form-group">
+                    <label class="textarea-label">Verification failed detailed reason:</label>
+                    <textarea class="form-control">Machine generated reason (e.g medical identity goes here along with custom errors found by verification personnel)</textarea>
+                  </div>
+                </div>
+                <div class="col-xs-12 vrfy-status-content vrfy-status4-content">
+                  <div class="vrfy-option-holder">
+                    <label class="md-check check-label">
+                      <input type="checkbox">
+                      <i class="fa fa-circle"></i> Notify via email </label>
+                    <label class="md-check check-label">
+                      <input type="checkbox">
+                      <i class="fa fa-circle"></i> Notify via text message </label>
+                    <label class="md-check check-label">
+                      <input type="checkbox">
+                      <i class="fa fa-circle"></i> Notify via text notification </label>
+                    <div class="ntfc-setting-icon"><i class="fa fa-cog fa-2x"></i></div>
+                  </div>
+                  <div class="form-group">
+                    <label class="textarea-label">Reason:</label>
+                    <textarea class="form-control"></textarea>
+                  </div>
+                  <hr>
+                  <div class="reason-list-holder">
+                    <h5 class="light-font">Old Reasons</h5>
+                    <ul>
+                      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    </ul>
+                  </div>
+                </div>
+                <!--status4--> 
+                
+              </div>
+              <!--end inner row-->
+              
+              <hr>
+            </div>
+          </div>
+          <!--end form-row-->
+          
+          <div class="col-xs-12">
+            <div class="form-btn-holder">
+              <button class="btn btn-lg btn-green btn-block" type="button">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--end tab3--> 
+      
+    </div>
+    <!--end tab holder--> 
+    
+  </div>
+</div>
+<!--end container-->
+
+<footer style="float:left"> MAT: MCL Admin Tool - © MCL LLP. All rights reserved - Version1.0 </footer>
+<div class="modal fade" id="edit-vw-img-modal" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header cus-mdl-hd">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title text-center">Heading</h4>
+      </div>
+      <div class="modal-body upld-img-holder">
+        <div class="single-img-holder"> <img src="images/patient-icon.png"> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ntfc-setting-popup">
+  <div class="ntfc-setting-popup-content">
+    <div class="form-group">
+      <label class="textarea-label">Email message:</label>
+      <textarea class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+      <label class="textarea-label">Text message:</label>
+      <textarea class="form-control sm-height"></textarea>
+    </div>
+    <div class="form-group">
+      <label class="textarea-label">Notification message:</label>
+      <textarea class="form-control sm-height"></textarea>
+    </div>
+    <div class="pull-right">
+      <button type="button" class="btn border-btn ntfc-setting-cancel"> Cancel </button>
+      <button type="button" class="btn border-btn"> Submit </button>
+    </div>
+  </div>
+</div>
+<!--end ntfc-setting-popup--> 
+
+<script src="js/jquery-1.11.0.min.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script src="js/bootstrap-datepicker.js"></script> 
+<script src="js/jquery.responsiveTabs.js"></script> 
+<script>
+
+$(function(){
+
+			$('#edit-prd-dt1, #edit-dd-dt1 , #edit-dd-dt2, #edit-dd-dt3, #edit-dd-dt4, #edit-mi-dt1, #edit-curnt-status-dt1, #edit-curnt-status-dt2').datepicker({
+
+				format: 'dd-mm-yyyy'
+
+			});
+
+});
+
+</script> 
+<script src="js/script.js"></script> 
+<script>
+
+//var tabContentHeight = $('.tab-content-holder:visible .form-inline').height();
+
+alert(tabContentHeight);
+
+//$('.tab-holder').css('height',tabContentHeight)
+
+
+
+$(document).on('change', '.btn-file :file', function() {
+
+  var input = $(this),
+
+      numFiles = input.get(0).files ? input.get(0).files.length : 1,
+
+      label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+
+  input.trigger('fileselect', [numFiles, label]);
+
+});
+
+
+
+$(document).ready( function() {
+
+    $('.btn-file :file').on('fileselect', function(event, numFiles, label) {
+
+        
+
+        var input = $(this).parents('.input-group').find(':text'),
+
+            log = numFiles > 1 ? numFiles + ' files selected' : label;
+
+        
+
+        if( input.length ) {
+
+            input.val(log);
+
+        } else {
+
+            if( log ) alert(log);
+
+        }
+
+        
+
+    });
+
+});
+
+</script> 
+<script type="text/javascript">
+
+        $(document).ready(function () {
+
+            var $tabs = $('#edit-dc-tab');
+
+            $tabs.responsiveTabs({
+
+                startCollapsed: 'accordion',
+
+                collapsible: 'accordion',
+
+				active: 0 
+
+
+
+            });
+
+
+
+
+
+        });
+
+    </script>
+</body>
+</html>

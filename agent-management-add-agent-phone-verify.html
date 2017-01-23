@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>MAT -  Add agent</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-switch.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/datepicker.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/color.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="full-height" id="add-agent">
+<header> <span class="back-link"><i class="fa fa-angle-left"></i> <a href="welcome-page.html">Back</a></span>
+  <h1>Add Agent</h1>
+  <div class="header-right-section">
+	Logout
+</div>
+</header>
+<!--===Header ends here===-->
+<div class="container shadow min-height" id="phone-verification">
+  <form>
+    <div class="form-row text-center">
+    	<div class="col-xs-12 form-block">
+        	<h1>OTP sent to your mobile number 9876543210</h1>
+        	<p>Please click Resend OTP Button if not received within 2 minutes</p>
+      	</div>
+        <div class="col-xs-12">
+        	<button type="button" class="btn btn-lg resend-btn"> <i class="fa fa-plus"></i> Resend OTP</button>
+        </div>
+    </div>
+    <div class="form-row">
+      	<div class="col-xs-12">
+            <div class="otp-section">
+              <label style="float:left">Enter OTP received on your mobile phone</label>
+              <input type="text" class="form-control" style="width:100px; float:left"> 
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="form-btn-holder">
+      <button class="btn btn-lg btn-green btn-block" type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+
+<!--end container-->
+
+<footer> MAT: MCL Admin Tool - © MCL LLP. All rights reserved - Version1.0 </footer>
+<script src="js/jquery-1.11.0.min.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script>
+
+$(document).ready(function(){
+
+    $(".right-info-link").click(function(){
+
+		var info = $(this).parents().eq(2).find('.right-detail-info');
+
+        $(info).slideToggle();
+
+		$(this).find('i').toggleClass('fa-angle-down');
+
+    });
+
+});
+
+</script>
+</body>
+</html>

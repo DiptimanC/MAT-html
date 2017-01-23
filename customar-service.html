@@ -1,0 +1,347 @@
+<!doctype html>
+
+
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>MAT - Customer List</title>
+
+<link rel="icon" href="images/fav-icon.ico" sizes="16x16">
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+<link href="css/bootstrap-switch.css" rel="stylesheet">
+
+<link href="css/font-awesome.css" rel="stylesheet">
+
+<link href="css/datepicker.css" rel="stylesheet" type="text/css">
+
+<link href="css/responsive-tabs.css" rel="stylesheet" type="text/css">
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<link href="css/color.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+
+<body>
+
+<header> <span class="back-link"><i class="fa fa-angle-left"></i> <a href="hospital-management.html">Back</a></span>
+
+  <h1>Pending Booking Details</h1>
+
+  <div class="header-right-section">
+
+    <div class="dropdown">
+        <span class="dropdown-toggle header-dropdown-link" data-toggle="dropdown"><i class="fa fa-ellipsis-v"></i></span>
+        <ul class="dropdown-menu header-dropdown-menu">
+          <li><a href="#">Confirmed booking</a></li>
+          <li><a href="#">Canceled booking</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <div class=" col-xs-12 tab-holder">
+      <div class="" style="display:block;">
+        <div class="col-xs-12">
+
+          
+
+          <form class="form-inline">
+          <div class="row form-row">
+          	<div class="col-xs-12 form-block">
+        	<h5>Patient Details</h5>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+               <label>Patient Name:</label>
+               <input type="text" class="form-control" value="" id="" placeholder="Akshar Ambani">
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+               <label>Patient Email:</label>
+               <input type="text" class="form-control" value="" id="" placeholder="akshar123@gmail.com">
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+               <label>Patient Phone:</label>
+               <input type="text" class="form-control" value="" id="" placeholder="9876543210">
+            </div>
+        </div>
+          </div>
+	
+    <div class="row form-row edit-form-row">
+    	<div class="col-xs-12 form-block">
+        <h5>Pending Booking Details</h5>
+      </div>
+      	<div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+               <label>Selected Date:</label>
+                      <input type="text" class="form-control" value="" id="cust-bking-dt1" placeholder="22.07.2016">
+            </div>
+        </div>
+        <div class="col-xs-12">
+        	<div class="row">
+            	<div class="col-xs-12 col-sm-6">
+            <div class="form-group">
+              <label>Clinic Name</label>
+              <input type="text" class="form-control ">
+            </div>
+        </div>
+		<div class="col-xs-12 col-sm-6">
+            <div class="form-group">
+              <label>Clinic Phone Number</label>
+              <input type="text" class="form-control ">
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+
+            <div class="form-group">
+
+              <label>Doctor Name</label>
+
+              <input type="text" class="form-control ">
+
+            </div>
+
+        </div>
+
+        
+
+        <div class="col-sm-6 col-xs-12">
+
+                    <div class="form-group">
+
+                      <label>Booking from:</label>
+
+                      <select class="form-control">
+
+                        <option></option>
+
+                        <option></option>
+
+                        <option></option>
+
+                      </select>
+
+                    </div>
+
+                  </div>
+
+                  
+
+                  <div class="col-sm-6 col-xs-12">
+
+                    <div class="form-group">
+
+                      <label>Booking to:</label>
+
+                      <select class="form-control">
+
+                        <option></option>
+
+                        <option></option>
+
+                        <option></option>
+
+                      </select>
+
+                    </div>
+
+                  </div>
+
+                  
+
+                  <div class="col-xs-12">
+
+            <div class="form-group">
+
+              <label>Called for confirmation</label>
+
+              	<div class="cust-bking-radio-holder">
+
+              		<label class="md-check">
+
+                	<input type="radio" name="Calledconfirmation" >
+
+                	<i class="fa fa-circle"></i>
+
+                	Yes (booked)
+
+                </label>
+
+        		<label class="md-check">
+
+                    <input type="radio" name="Calledconfirmation"  >
+
+                    <i class="fa fa-circle"></i>
+
+                    No (canceled)
+
+                </label>
+
+                <label class="md-check">
+
+                    <input type="radio" name="Calledconfirmation" checked="">
+
+                    <i class="fa fa-circle"></i>
+
+                    Other
+
+                </label>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="form-group other-reason-field">
+
+                       <textarea class="form-control"></textarea>
+
+                    </div>
+
+          </div>
+
+          
+
+          
+
+          
+
+          
+
+       
+
+      
+
+    </div>
+
+    
+
+    
+
+    
+
+    <div class="form-btn-holder">
+
+      <button class="btn btn-lg btn-green btn-block" type="submit">Submit</button>
+
+    </div>
+
+  </form>
+
+          
+
+        </div>
+      </div>
+    </div>
+    <!--end tab holder--> 
+  </div>
+</div>
+<!--end container-->
+
+<footer style="float:left"> MAT: MCL Admin Tool - © MCL LLP. All rights reserved - Version1.0 </footer>
+
+
+<!--end ntfc-setting-popup--> 
+
+
+
+<script src="js/jquery-1.11.0.min.js"></script> 
+
+<script src="js/bootstrap.js"></script> 
+
+<script src="js/bootstrap-datepicker.js"></script> 
+
+<script src="js/jquery.responsiveTabs.js"></script> 
+
+<script>
+
+$(function(){
+
+			$('#cust-bking-dt1,#cust-bking-dt2,#cust-bking-dt3').datepicker({
+
+				format: 'dd-mm-yyyy'
+
+			});
+
+});
+
+</script> 
+
+<script src="js/script.js"></script> 
+
+<script>
+
+//var tabContentHeight = $('.tab-content-holder:visible .form-inline').height();
+
+alert(tabContentHeight);
+
+//$('.tab-holder').css('height',tabContentHeight)
+
+
+
+
+
+$(document).on('change', '.btn-file :file', function() {
+
+  var input = $(this),
+
+      numFiles = input.get(0).files ? input.get(0).files.length : 1,
+
+      label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+
+  input.trigger('fileselect', [numFiles, label]);
+
+});
+
+
+
+
+
+$(document).ready( function() {
+
+    $('.btn-file :file').on('fileselect', function(event, numFiles, label) {
+
+        var input = $(this).parents('.input-group').find(':text'),
+
+            log = numFiles > 1 ? numFiles + ' files selected' : label;
+
+        if( input.length ) {
+
+            input.val(log);
+
+        } else {
+
+            if( log ) alert(log);
+
+        }
+
+    });
+
+});
+
+</script> 
+
+</body>
+
+</html>
+

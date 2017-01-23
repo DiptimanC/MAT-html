@@ -1,0 +1,226 @@
+.r-tabs .r-tabs-nav {
+    margin: 0;
+    padding: 0; 
+}
+.r-tabs-nav{width:100%; overflow-x:auto; white-space:nowrap }
+#edit-dc-tab.r-tabs{padding:10px;}
+.r-tabs .r-tabs-tab {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+}
+.r-tabs .r-tabs-panel {
+    padding:10px 15px;
+    display: none;
+}
+.r-tabs .r-tabs-accordion-title {
+    display: none;}
+
+.r-tabs .r-tabs-panel.r-tabs-state-active {
+    display: block;
+}
+
+
+
+/* Accordion responsive breakpoint */
+
+@media only screen and (max-width: 768px) {
+
+    .r-tabs .r-tabs-nav {
+
+        display: none;
+
+    }
+
+
+
+    .r-tabs .r-tabs-accordion-title {
+
+        display: block;
+
+    }
+
+	.r-tabs .r-tabs-panel {
+
+    padding:0 15px;
+
+}
+
+}
+
+
+
+/*style*/
+
+
+
+/* Tabs container */
+
+.r-tabs {
+
+	position: relative;
+
+
+
+}
+
+
+
+/* Tab element */
+
+.r-tabs .r-tabs-nav .r-tabs-tab {
+
+	position: relative;
+
+	/*background-color: #00c5ad;*/
+
+}
+
+
+
+/* Tab anchor */
+
+.r-tabs .r-tabs-nav .r-tabs-anchor {
+
+	display: inline-block;
+
+	padding: 10px 12px;
+
+    text-decoration: none;
+
+	/*text-shadow: 0 1px rgba(0, 0, 0, 0.4);*/
+
+	font-size: 15px;
+
+	color: #333;
+
+	font-family: 'helveticaneuebold';
+
+}
+
+
+
+/* Disabled tab */
+
+.r-tabs .r-tabs-nav .r-tabs-state-disabled {
+
+	opacity: 0.5;
+
+}
+
+
+
+/* Active state tab anchor */
+
+.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+
+	color: #333;
+
+	text-shadow: none;
+
+	background-color: white;
+
+    border-top-right-radius:0;
+
+	border-top-left-radius:0;
+
+    border-top:4px solid #009688;
+
+	
+
+}
+
+#edit-dc-tab.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+
+	background-color:#DEDEDF;
+
+}
+
+
+
+/* Tab panel */
+
+.r-tabs .r-tabs-panel {
+
+	background-color: white;
+
+
+
+	border-bottom: 4px solid white;
+
+
+
+	border-bottom-right-radius:0;
+
+	border-bottom-left-radius:0;
+
+}
+
+#edit-dc-tab.r-tabs .r-tabs-panel {
+
+	background-color:#DEDEDF;
+
+}
+
+
+
+/* Accordion anchor */
+
+.r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+
+	display: block;
+
+	padding: 10px;
+
+
+
+	background-color: #F1F1F1;
+
+	color: #333;
+
+	font-weight: bold;
+
+	text-decoration: none;
+
+	/*text-shadow: 0 1px rgba(0, 0, 0, 0.4);*/
+
+	font-size: 14px;
+
+
+
+	border-top-right-radius: 0;
+
+	border-top-left-radius:0;
+
+	border-bottom: 2px solid #fff;
+
+}
+
+
+
+/* Active accordion anchor */
+
+.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+
+	background-color: #fff;
+
+	color: #333;
+
+	text-shadow: none;
+
+	font-family: 'helveticaneuebold';
+
+}
+
+
+
+/* Disabled accordion button */
+
+.r-tabs .r-tabs-accordion-title.r-tabs-state-disabled {
+
+	opacity: 0.5;
+
+}
+
+
+

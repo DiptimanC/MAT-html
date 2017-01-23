@@ -1,0 +1,128 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>MAT Add User</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-switch.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/datepicker.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/color.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="full-height">
+<header> <span class="back-link"><i class="fa fa-angle-left"></i> <a href="welcome-page.html">Back</a></span>
+  <h1>Add User</h1>
+  <div class="header-right-section">
+<div class="dropdown">
+    <span class="dropdown-toggle header-dropdown-link" data-toggle="dropdown"><i class="fa fa-ellipsis-v"></i></span>
+    <ul class="dropdown-menu header-dropdown-menu">
+      <li><a href="#">Group Management</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+</div>
+</header>
+<!--===Header ends here===-->
+<div class="container add-prfsnl-form shadow min-height">
+  <form class="form-inline">
+    <div class="form-row">
+      <div class="col-xs-12 form-block">
+        <h5>Personal Details</h5>
+      </div>
+      <div class="prfl-img-holder">
+        <input type="file" class="upload-photo">
+        	<img src="images/profile-img.png" alt="Profile Image"> 
+        <span class="photo-text">Add Photo</span> 
+      </div>
+      <div class="col-xs-12">
+        <div class="row">
+          <div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label>First Name:</label>
+              <input type="text" class="form-control" placeholder="First Name">
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label>Last Name:</label>
+              <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label>Email ID:</label>
+              <input type="text" class="form-control" placeholder="Email">
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label>Contact Phone (optional)</label>
+              <input type="text" class="form-control" placeholder="Write with extension">
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label>Password:</label>
+              <input type="text" class="form-control" placeholder="Minimum 8 characters">
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label>Confirm Password:</label>
+              <input type="text" class="form-control" placeholder="Repeat same password">
+            </div>
+          </div>
+        </div>
+        <!--end inner row--> 
+        
+      </div>
+    </div>
+    
+    <div class="form-row">
+    	<div class="col-xs-12 form-block">
+        <h5>User Prefessional Information</h5>
+      </div>
+      	<div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label>Select Role Group:</label>
+              <select class="form-control">
+              	<option>Data Entry Operators</option>
+                <option>Agent Managers</option>
+              </select>
+            </div>
+        </div>
+    </div>
+    <div class="form-btn-holder">
+      <button class="btn btn-lg btn-green btn-block" type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+
+<!--end container-->
+
+<footer> MAT: MCL Admin Tool - © MCL LLP. All rights reserved - Version1.0 </footer>
+<script src="js/jquery-1.11.0.min.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script>
+
+$(document).ready(function(){
+
+    $(".right-info-link").click(function(){
+
+		var info = $(this).parents().eq(2).find('.right-detail-info');
+
+        $(info).slideToggle();
+
+		$(this).find('i').toggleClass('fa-angle-down');
+
+    });
+
+});
+
+</script>
+</body>
+</html>

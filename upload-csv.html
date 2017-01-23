@@ -1,0 +1,191 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<title>Upload by csv</title>
+
+<link rel="icon" href="images/fav-icon.ico" sizes="16x16">
+
+
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+<link href="css/bootstrap-switch.css" rel="stylesheet">
+
+<link href="css/font-awesome.css" rel="stylesheet">
+
+<link href="css/datepicker.css" rel="stylesheet" type="text/css">
+
+ <link href="css/responsive-tabs.css" rel="stylesheet" type="text/css">
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<link href="css/color.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+
+<body class="full-height" id="login-page">
+
+
+
+<header>
+<span class="back-link"><i class="fa fa-angle-left"></i> <a href="">Back</a></span>
+<h1>Upload Doctor Data</h1>
+<div class="header-right-section">
+
+<div class="dropdown">
+
+    <span class="dropdown-toggle header-dropdown-link" data-toggle="dropdown"><i class="fa fa-ellipsis-v"></i></span>
+
+    <ul class="dropdown-menu header-dropdown-menu">
+
+      <li><a href="upload-csv.html">Upload CSV</a></li>
+
+      <li><a href="#">Logout</a></li>
+
+    </ul>
+
+  </div>
+
+
+
+</div>
+</header>
+
+
+
+<div class="container">
+
+<div class="row">
+
+
+
+<div class="upload-csv-holder col-md-6 col-sm-8 col-xs-12">
+
+ <form>
+<div class="upload-csv-content form-block">
+
+<h5>Upload by CSV</h5>
+
+         <div class="input-group">
+
+        <input type="text" class="form-control" readonly>
+
+                <span class="input-group-btn">
+
+                    <span class="btn-file">
+
+                        Upload<input type="file" multiple>
+
+                    </span>
+
+                </span>
+
+                
+
+            </div>
+
+
+
+        
+
+        
+
+        
+
+ </div>        
+
+        <button class="btn btn-lg btn-green btn-block" type="button" onclick="window.location.href='welcome-page.html'">Sign in</button>
+
+ </form>
+
+ 
+
+
+ 
+
+
+
+
+
+    </div>
+
+    
+
+    </div>
+
+</div>
+
+
+<footer>
+
+MAT: MCL Admin Tool - © MCL LLP. All rights reserved - Version1.0
+
+</footer>
+
+    
+
+    
+<script src="js/jquery-1.11.0.min.js"></script>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+<script>
+
+$(document).on('change', '.btn-file :file', function() {
+
+  var input = $(this),
+
+      numFiles = input.get(0).files ? input.get(0).files.length : 1,
+
+      label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+
+  input.trigger('fileselect', [numFiles, label]);
+
+});
+
+
+$(document).ready( function() {
+
+    $('.btn-file :file').on('fileselect', function(event, numFiles, label) {
+
+        
+
+        var input = $(this).parents('.input-group').find(':text'),
+
+            log = numFiles > 1 ? numFiles + ' files selected' : label;
+
+        
+
+        if( input.length ) {
+
+            input.val(log);
+
+        } else {
+
+            if( log ) alert(log);
+
+        }
+
+        
+
+    });
+
+});
+</script>
+
+</body>
+
+</html>
+

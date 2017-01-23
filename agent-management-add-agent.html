@@ -1,0 +1,174 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>MAT -  Add agent</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-switch.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/datepicker.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/color.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="full-height" id="add-agent">
+<header> <span class="back-link"><i class="fa fa-angle-left"></i> <a href="welcome-page.html">Back</a></span>
+  <h1>Add Agent</h1>
+  <div class="header-right-section">
+	Logout
+</div>
+</header>
+<!--===Header ends here===-->
+<div class="container shadow min-height">
+  <form class="form-inline">
+    <div class="form-row">
+      <div class="col-xs-12 form-block">
+        <h5>Personal Details</h5>
+      </div>
+      <div class="prfl-img-holder">
+        <input type="file" class="upload-photo">
+        	<img src="images/profile-img.png" alt="Profile Image"> 
+        <span class="photo-text">Add Photo</span> 
+      </div>
+      <div class="col-xs-12">
+        <div class="row">
+          <div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label>First Name:</label>
+              <input type="text" class="form-control" placeholder="First Name">
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label>Last Name:</label>
+              <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label>Address:</label>
+              <input type="text" class="form-control" placeholder="Email">
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label>Contact Phone</label>
+              <input type="text" class="form-control" placeholder="Write with extension">
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label>Password:</label>
+              <input type="text" class="form-control" placeholder="Minimum 8 characters">
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label>Confirm Password:</label>
+              <input type="text" class="form-control" placeholder="Repeat same password">
+            </div>
+          </div>
+        </div>
+        <!--end inner row--> 
+        
+      </div>
+    </div>
+    
+    <div class="form-row">
+    	<div class="col-xs-12 form-block">
+        <h5>Identity Information</h5>
+      </div>
+      	<div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label>Identification Proof</label>
+              <div class="input-group id-proof">
+        		<input type="text" class="form-control tab-file-name-holder" readonly>
+                <span class="input-group-btn">
+                    <span class="btn-file">
+                        Upload<input type="file" multiple>
+                    </span>
+                </span>
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+        	<button type="button" class="btn btn-lg btn-add"> <i class="fa fa-plus"></i> Add Proof</button>
+        </div>
+    </div>
+    <div class="form-row">
+    	<div class="col-xs-12 form-block">
+        <h5>Official Information</h5>
+      </div>
+      	<div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label>Assigned Area</label>
+              <select class="form-control">
+              	<option>Select A</option>
+                <option>Select B</option>
+                <option>Select C</option>
+              </select>
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+    	<div class="col-xs-12 form-block">
+        <h5>Bank Details</h5>
+      </div>
+      	<div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+              <label>Bank Name</label>
+              <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+        	<div class="form-group">
+              <label>Account Number</label>
+              <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+        	<div class="form-group">
+              <label>Branch</label>
+              <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+        	<div class="form-group">
+              <label>NEFT</label>
+              <input type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+    
+    <div class="form-btn-holder">
+      <button class="btn btn-lg btn-green btn-block" type="submit">Add Agent</button>
+    </div>
+  </form>
+</div>
+
+<!--end container-->
+
+<footer> MAT: MCL Admin Tool - © MCL LLP. All rights reserved - Version1.0 </footer>
+<script src="js/jquery-1.11.0.min.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script>
+
+$(document).ready(function(){
+
+    $(".right-info-link").click(function(){
+
+		var info = $(this).parents().eq(2).find('.right-detail-info');
+
+        $(info).slideToggle();
+
+		$(this).find('i').toggleClass('fa-angle-down');
+
+    });
+
+});
+
+</script>
+</body>
+</html>
